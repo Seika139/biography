@@ -2,25 +2,34 @@
   <v-app>
     <navigation/>
     <v-content>
-      <Body/>
+      <v-container>
+        <v-row class="text-center">
+          <profile/>
+          <skill/>
+          <history/>
+          <contact/>
+        </v-row>
+      </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Body from './components/Body';
-import Navigation from './components/Navigation';
+  import { Navigation, Profile, Skill, History, Contact } from './components/'
 
-export default {
-  name: 'App',
+  export default {
+    name: 'App',
 
-  components: {
-    Body,
-    Navigation,
-  },
+    components: {
+      Navigation,
+      Profile,
+      Skill,
+      History,
+      Contact
+    },
 
-  data: () => ({
-    //
-  }),
-};
+    data: () => ({
+      //
+    })
+  }
 </script>
