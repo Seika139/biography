@@ -8,13 +8,11 @@
       </h2>
 
       <v-row justify="center">
-        <a v-for="(eco, i) in ecosystem"
-           :key="i"
-           :href="eco.href"
-           class="subheading mx-3"
-           target="_blank">
-                  {{ eco.text }}
-                </a>
+        <v-col v-for="(item, i) in links" :key="i" cols="3">
+          <v-icon class="mx-1">{{ item.icon }}</v-icon>
+          <a v-if="item.href" class="subheading mx-3" target="_blank" :href="item.href">{{ item.text }}</a>
+          <span v-else>{{ item.text }}</span>
+        </v-col>
       </v-row>
     </v-col>
   </v-row>
@@ -27,18 +25,20 @@
     name: 'Contact',
 
     data: () => ({
-      ecosystem: [
+      links: [
         {
-          text: 'vuetify-loader',
-          href: 'https://github.com/vuetifyjs/vuetify-loader'
+          icon: 'mdi-email',
+          text: 'tcoanzu@gmail.com'
         },
         {
-          text: 'github',
-          href: 'https://github.com/vuetifyjs/vuetify'
+          icon: 'mdi-github',
+          text: 'Github',
+          href: 'https://github.com/Seika139'
         },
         {
-          text: 'awesome-vuetify',
-          href: 'https://github.com/vuetifyjs/awesome-vuetify'
+          icon: 'mdi-magnify',
+          text: 'Qiita',
+          href: 'https://qiita.com/Seika139'
         }
       ]
     })
