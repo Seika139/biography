@@ -1,0 +1,43 @@
+module.exports = {
+  rules: {
+    "type-enum": [
+      2,
+      "always",
+      [
+        ":tada:",
+        ":art:",
+        ":fire:",
+        ":bug:",
+        ":ambulance:",
+        ":sparkles:",
+        ":memo:",
+        ":white_check_mark:",
+        ":rotating_light:",
+        ":construction:",
+        ":recycle:",
+        ":wrench:",
+        ":pencil2:",
+        ":poop:",
+        ":twisted_rightwards_arrows:",
+        ":truck:",
+        ":bento:",
+        ":ok_hand:",
+        ":children_crossing:",
+        ":building_construction:",
+      ],
+    ],
+    "body-leading-blank": [2, "always"],
+    "body-max-length": [2, "always", 72],
+    "subject-case": [2, "always", ["sentence-case"]],
+    "subject-max-length": [2, "always", 50],
+    "subject-empty": [2, "never"],
+    "subject-full-stop": [2, "never", "."],
+    "type-empty": [2, "never"],
+  },
+  parserPreset: {
+    parserOpts: {
+      headerPattern: /^(:\w+:) (.+)$/,
+      headerCorrespondence: ["type", "subject"],
+    },
+  },
+};

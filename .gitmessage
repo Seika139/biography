@@ -1,0 +1,41 @@
+
+# Write a commit message according to the description below.
+# Lines preceded by a hashtag are ignored.
+
+# ==== Format ====
+# :emoji: Subject
+#
+# Commit body...
+
+# ==== Emojis ====
+# 🎉  :tada: プロジェクトの開始。コードやファイルの作成・追加
+# 🎨  :art: コードの形式や構造の改善
+# 🔥  :fire: コードやファイルの削除
+# 🐛  :bug: バグの修正
+# 🚑  :ambulance: 緊急の修正(Hotfix)
+# ✨  :sparkles: 新機能の導入
+# 📝  :memo: ドキュメントの作成・追加
+# ✅  :white_check_mark: テストの追加
+# 🚨  :rotating_light: リンター警告の除去
+# 🚧  :construction: 作業中のコード
+# ♻️  :recycle: コードのリファクタリング
+# 🔧  :wrench: 設定ファイルの改善
+# ✏️  :pencil2: タイポの修正
+# 💩  :poop: 修正や改善が必要なコード
+# 🔀  :twisted_rightwards_arrows: ブランチのマージ
+# 🚚  :truck: ファイルの移動やリネーム
+# 🍱  :bento: アセットの追加やアップデート
+# 👌  :ok_hand: コードレビューによるコードの改善
+# 🚸  :children_crossing: UI・UXの改善
+# 🏗  :building_construction: プロジェクトのフォルダ構造の改善
+
+# ==== The Seven Rules ====
+# 1. Separate subject from body with a blank line
+# 2. Limit the subject line to 50 characters
+# 3. Capitalize the subject line
+# 4. Do not end the subject line with a period
+# 5. Use the imperative mood in the subject line
+# 6. Wrap the body at 72 characters
+# 7. Use the body to explain what and why vs. how
+#
+# How to Write a Git Commit Message http://chris.beams.io/posts/git-commit/
