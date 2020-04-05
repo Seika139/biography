@@ -1,5 +1,7 @@
 <template>
-  <v-col class="mb-5" cols="12">
+  <v-row>
+  <v-spacer></v-spacer>
+  <v-col class="mb-5" cols="12" xl="9" justify="center">
     <h2 class="headline font-weight-bold mb-3">
       <v-icon dence>mdi-school</v-icon>
       History
@@ -16,6 +18,8 @@
       </v-timeline-item>
     </v-timeline>
   </v-col>
+  <v-spacer></v-spacer>
+  </v-row>
 </template>
 
 <script>
