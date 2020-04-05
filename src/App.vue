@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <navigation/>
+    <navigation :language-id="languageId" @change="update($event)"/>
     <v-content>
       <v-container>
         <v-row class="text-center">
-          <profile/>
+          <profile :language-id="languageId"/>
           <skill/>
-          <history/>
+          <history :language-id="languageId"/>
           <contact/>
         </v-row>
       </v-container>
@@ -29,7 +29,13 @@
     },
 
     data: () => ({
-      //
-    })
+      languageId: 0,
+    }),
+
+    methods: {
+      update(id) {
+        this.languageId = id
+      },
+    },
   }
 </script>

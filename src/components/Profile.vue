@@ -8,13 +8,11 @@
 
   <v-col class="mb-4">
     <h1 class="display-2 font-weight-bold mb-3">
-      Kenichi Suzuki
+      {{ nameText }}
     </h1>
 
     <p class="subheading font-weight-regular">
-      For help and collaboration with other Vuetify developers,
-      <br>please join our online
-      <a href="https://community.vuetifyjs.com" target="_blank">Discord Community</a>
+      {{ profileText }}
     </p>
   </v-col>
   </v-row>
@@ -24,13 +22,24 @@
 export default {
   name: 'Profile',
 
+  props: {
+    languageId: {
+      type: Number,
+      default: 0,
+    }
+  },
+
   computed: {
-    timelineItems() {
-      return [
-        { title: "First", text: "English", date: "2015"},
-        { title: "First", text: "English", date: "2015"},
-        { title: "First", text: "English", date: "2015"},
-      ]
+    nameText() {
+      const ja = '鈴木 健一'
+      const en = 'Kenichi Suzuki'
+      return [ ja, en ][this.languageId]
+    },
+
+    profileText() {
+      const ja = '東京大学薬学部4年生 / エンジニア '
+      const en = 'The University of Tokyo Faculty of Pharmacy 4th grade / committed in engineering'
+      return [ ja, en ][this.languageId]
     }
   }
 }

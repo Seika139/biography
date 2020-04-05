@@ -5,10 +5,10 @@
       History
     </h2>
 
-    <v-timeline dense>
+    <v-timeline>
       <v-timeline-item v-for="(item,i) in timelineItems" :key="i">
         <v-card class="elevation-2">
-          <v-card-title class="headline">{{ item.title }}</v-card-title>
+          <v-card-title class="headline indigo--text text--darken-4">{{ item.title }}</v-card-title>
           <v-card-text>
             {{ item.text }}
           </v-card-text>
@@ -22,13 +22,34 @@
 export default {
   name: 'History',
 
+  props: {
+    languageId: {
+      type: Number,
+      default: 0,
+    }
+  },
+
   computed: {
     timelineItems() {
-      return [
-        { title: "First", text: "English", date: "2015"},
-        { title: "First", text: "English", date: "2015"},
-        { title: "First", text: "English", date: "2015"},
+      const ja = [
+        { title: '2017年3月', text: '東京都立日比谷高等学校を卒業' },
+        { title: '2017年4月', text: '東京大学理科二類に入学' },
+        { title: '2017年5月 ~', text: '様々な会社でアルバイトとしてプログラミングスキルを磨く' },
+        { title: '2018年4月 ~ 2018年12月', text: '大学生プログラミングスクール「Geek Salon」にてiOSアプリとJavascriptを用いたWebアプリの開発を学ぶ' },
+        { title: '2018年9月', text: '進学選択の結果、薬学部に所属する' },
+        { title: '2019年12月 ~', text: '株式会社ベンドのエンジニアとしてウェブサイト「資格タイムズ」のCMSの開発を担当'},
+        { title: '2020年4月', text: '分析化学研究室に配属'}
       ]
+      const en = [
+        { title: 'Mar 2017', text: 'Graduated from Tokyo Metropolitan Hibiya High School' },
+        { title: 'Apr 2017', text: 'Entered the University of Tokyo' },
+        { title: 'May 2017 ~', text: 'Participated in internships at several companies and improved programming skills' },
+        { title: 'Apr 2018 ~ Dec 2018', text: 'Participated in Geek Salon, a programming school for college students and created iOS application and web service thanks for mentor’s help.' },
+        { title: 'Sep 2018', text: 'Assigned to Faculty of Pharmaceutical Sciences' },
+        { title: 'Dec 2019 ~', text: 'Working for Bend Inc. and Developed a content management service for website "Shikaku Times"'},
+        { title: 'Apr 2020', text: 'Assigned to Analytical Chemistry Lab' },
+      ]
+      return [ ja, en ][this.languageId]
     }
   }
 }
