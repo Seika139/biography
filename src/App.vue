@@ -5,7 +5,7 @@
       <v-container>
         <v-row class="text-center">
           <profile :language-id="languageId"/>
-          <skill/>
+          <skill :language-id="languageId"/>
           <history :language-id="languageId"/>
           <contact/>
         </v-row>

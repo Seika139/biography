@@ -47,7 +47,7 @@
     computed: {
       languages() {
         return [
-          { id: 0, text: 'Japanese' },
+          { id: 0, text: '日本語' },
           { id: 1, text: 'English' }
         ]
       }
