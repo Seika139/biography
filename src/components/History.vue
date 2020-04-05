@@ -1,17 +1,22 @@
 <template>
   <v-row>
   <v-spacer></v-spacer>
-  <v-col class="mb-5" cols="12" xl="9" justify="center">
+  <v-col class="mb-5" cols="10" xl="9" justify="center">
     <h2 class="headline font-weight-bold">
       <v-icon dence>mdi-school</v-icon>
       History
     </h2>
     <br>
-    <v-timeline>
+    <v-timeline :dense="$vuetify.breakpoint.xs || $vuetify.breakpoint.sm">
       <v-timeline-item v-for="(item,i) in timelineItems" :key="i">
         <v-card class="elevation-4">
-          <v-card-title class="headline indigo--text text--darken-4">{{ item.title }}</v-card-title>
-          <v-card-text>
+          <v-card-title v-if="!$vuetify.breakpoint.xs" class="headline indigo--text text--darken-4">
+            {{ item.title }}
+          </v-card-title>
+          <p v-else class="pt-2 mb-0 indigo--text text--darken-4">
+            {{ item.title }}
+          </p>
+          <v-card-text class="grey--text text--darken-2">
             {{ item.text }}
           </v-card-text>
         </v-card>
@@ -54,6 +59,10 @@ export default {
         { title: 'Apr 2020', text: 'Assigned to Analytical Chemistry Lab' },
       ]
       return [ ja, en ][this.languageId]
+    },
+
+    denseTimeline() {
+      return this.$vuetify.breakpoint.xs
     }
   }
 }

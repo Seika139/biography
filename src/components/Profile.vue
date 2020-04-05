@@ -1,12 +1,12 @@
 <template>
-  <v-row>
+  <v-row justify="center">
   <v-col cols="12">
     <v-avatar class="my-3" size="200">
       <img :src="require('../assets/icon.jpg')">
     </v-avatar>
   </v-col>
 
-  <v-col class="mb-4">
+  <v-col class="mb-4" cols="10">
     <h1 class="display-2 font-weight-bold mb-3">
       {{ nameText }}
     </h1>
