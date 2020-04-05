@@ -1,11 +1,11 @@
 <template>
 
   <v-col class="mb-5" cols="12">
-    <h2 class="headline font-weight-bold mb-3">
+    <h2 class="headline font-weight-bold">
       <v-icon dence>mdi-email</v-icon>
       Contact
     </h2>
-
+    <br>
     <v-row justify="center">
       <v-col v-for="(item, i) in links" :key="i" cols="3">
         <v-icon class="mx-1">{{ item.icon }}</v-icon>

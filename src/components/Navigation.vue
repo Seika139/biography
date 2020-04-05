@@ -3,7 +3,9 @@
     app
     color="indigo"
     dark>
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    <h2 class="headline font-weight-bold">
+      Portfolio site
+    </h2>
 
     <v-spacer></v-spacer>
 
@@ -14,7 +16,7 @@
       item-text="text"
       item-value="id"
       label="Language"
-      class="mt-7"
+      class="mt-8"
       height="100"
       @change="change()"
       ></v-select>

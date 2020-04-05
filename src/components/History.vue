@@ -2,14 +2,14 @@
   <v-row>
   <v-spacer></v-spacer>
   <v-col class="mb-5" cols="12" xl="9" justify="center">
-    <h2 class="headline font-weight-bold mb-3">
+    <h2 class="headline font-weight-bold">
       <v-icon dence>mdi-school</v-icon>
       History
     </h2>
-
+    <br>
     <v-timeline>
       <v-timeline-item v-for="(item,i) in timelineItems" :key="i">
-        <v-card class="elevation-2">
+        <v-card class="elevation-4">
           <v-card-title class="headline indigo--text text--darken-4">{{ item.title }}</v-card-title>
           <v-card-text>
             {{ item.text }}

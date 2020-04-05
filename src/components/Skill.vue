@@ -1,10 +1,10 @@
 <template>
 <v-col class="mb-5" cols="12">
-  <h2 class="headline font-weight-bold mb-3">
+  <h2 class="headline font-weight-bold">
     <v-icon dence>mdi-lightbulb-on</v-icon>
     Skills
   </h2>
-
+  <br>
   <v-row justify="center">
     <a v-for="(link, i) in importantLinks"
        :key="i"
