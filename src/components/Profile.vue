@@ -37,7 +37,7 @@ export default {
     },
 
     profileText() {
-      const ja = '東京大学薬学部4年生 / エンジニア '
+      const ja = '東京大学薬学部4年 / エンジニア '
       const en = 'The University of Tokyo Faculty of Pharmacy 4th grade / committed in engineering'
       return [ ja, en ][this.languageId]
     }
