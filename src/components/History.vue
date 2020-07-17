@@ -107,11 +107,11 @@ export default {
         },
         {
           title: 'Sep 2018 ~',
-          text: 'Engaged in the development of internal Web services and tools as the development team of Nagase Co., Ltd.'
+          text: 'Engaged in the development of internal Web services and tools as the development team of Nagase Inc.'
         },
         {
           title: 'Sep 2019',
-          text: 'Participated in summer intern of Cygames Co., Ltd. and learn about game production'
+          text: 'Participated in summer intern of Cygames Inc. and learn about game production'
         },
         {
           title: 'Dec 2019 ~',

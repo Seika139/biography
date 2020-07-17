@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid fill-height>
+  <v-container fluid>
     <v-row justify="center">
       <v-col cols="12">
         <h2 class="headline font-weight-bold">
@@ -8,7 +8,7 @@
         </h2>
         <br>
         <v-row justify="center">
-          <v-card  v-for="(item,i) in cardItems" :key="i" class="mx-4 my-6" max-width="400px">
+          <v-card  v-for="(item,i) in cardItems" :key="i" class="mx-4 my-6" width="320px">
             <v-img  class="white--text" :src="require('../assets/hobby/' + item.img)" height="200px">
               <v-card-title class="font-weight-black">{{ item.title }}</v-card-title>
             </v-img>
@@ -38,7 +38,8 @@ export default {
       const ja = [
         {
           title: 'サッカー',
-          text: '中高時代はサッカー部に所属していました。今はプレイしていませんがサッカーは好きです', img: 'soccer.jpg',
+          text: '中高時代はサッカー部に所属していました。サッカー観戦も好きです',
+          img: 'soccer.jpg',
         },
         {
           title: 'ゲーム',

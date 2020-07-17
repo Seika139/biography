@@ -1,21 +1,23 @@
 <template>
-  <v-row justify="center">
-  <v-col cols="12">
-    <v-avatar class="my-3" size="200">
-      <img :src="require('../assets/icon.jpg')">
-    </v-avatar>
-  </v-col>
+  <v-container fluid>
+    <v-row justify="center">
+      <v-col cols="12">
+        <v-avatar class="my-3" size="200">
+          <img :src="require('../assets/icon.jpg')">
+        </v-avatar>
+      </v-col>
 
-  <v-col class="mb-4" cols="10">
-    <h1 class="display-2 font-weight-bold mb-3">
-      {{ nameText }}
-    </h1>
+      <v-col class="mb-4" cols="10">
+        <h1 class="display-2 font-weight-bold mb-3">
+          {{ nameText }}
+        </h1>
 
-    <p class="subheading font-weight-regular">
-      {{ profileText }}
-    </p>
-  </v-col>
-  </v-row>
+        <p class="subheading font-weight-regular">
+          {{ profileText }}
+        </p>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -40,7 +42,7 @@ export default {
       const ja = '東京大学薬学部4年 / エンジニア '
       const en = 'The University of Tokyo Faculty of Pharmacy 4th grade / IT engineer'
       return [ ja, en ][this.languageId]
-    }
-  }
+    },
+  },
 }
 </script>
