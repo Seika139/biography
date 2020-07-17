@@ -76,6 +76,10 @@ export default {
           text: '株式会社ベンドのエンジニアとしてウェブサイト「資格タイムズ」のCMSの開発を担当。他にもRedashによる売上分析、社内用のLINE botの作成などの幅広い業務をこなしている'
         },
         {
+          title: '2020年1月',
+          text: '薬学部内の研究室配属における抽選・振り分けアルゴリズム、およびWebアプリを作成'
+        },
+        {
           title: '2020年4月',
           text: '分析化学研究室に配属'
         },
@@ -116,6 +120,10 @@ export default {
         {
           title: 'Dec 2019 ~',
           text: 'Working for Bend Inc. and Developed a content management service for website "Shikaku Times"'
+        },
+        {
+          title: 'Jan 2020',
+          text: 'Create a lottery algorithm and a web application for a laboratory assignment in the Faculty of Pharmacy'
         },
         {
           title: 'Apr 2020',
