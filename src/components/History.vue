@@ -123,7 +123,7 @@ export default {
         },
         {
           title: 'Jan 2020',
-          text: 'Create a lottery algorithm and a web application for a laboratory assignment in the Faculty of Pharmacy'
+          text: 'Created a lottery algorithm and a web application for a laboratory assignment in the Faculty of Pharmacy'
         },
         {
           title: 'Apr 2020',
