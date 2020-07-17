@@ -18,3 +18,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# added by myself
+document.md
