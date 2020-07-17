@@ -4,10 +4,11 @@
     <v-content>
       <v-container>
         <v-row class="text-center">
-          <profile :language-id="languageId"/>
-          <skill :language-id="languageId"/>
-          <hobby :language-id="languageId"/>
-          <history :language-id="languageId"/>
+          <profile :language-id="languageId" />
+          <links :language-id="languageId" />
+          <skill :language-id="languageId" />
+          <hobby :language-id="languageId" />
+          <history :language-id="languageId" />
           <contact/>
         </v-row>
       </v-container>
@@ -16,7 +17,7 @@
 </template>
 
 <script>
-  import { Navigation, Profile, Skill, Hobby, History, Contact } from './components/'
+  import { Navigation, Profile, Skill, Links, Hobby, History, Contact } from './components/'
 
   export default {
     name: 'App',
@@ -25,6 +26,7 @@
       Navigation,
       Profile,
       Skill,
+      Links,
       Hobby,
       History,
       Contact

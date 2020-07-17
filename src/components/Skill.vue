@@ -44,7 +44,7 @@
         return [
           {
             im: 'laravel.png',
-            ja: '株式会社ベンドにてCMSのバックエンドを担当',
+            ja: '株式会社ベンドにてCMSのバックエンドを担当した際に使用',
             en: 'The backend of CMS and website in Bend Inc.'
           },
           {
