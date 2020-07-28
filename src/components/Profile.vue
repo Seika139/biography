@@ -39,7 +39,7 @@ export default {
     },
 
     profileText() {
-      const ja = '東京大学薬学部4年 / エンジニア '
+      const ja = '東京大学薬学部4年 / ITエンジニア '
       const en = 'The University of Tokyo Faculty of Pharmacy 4th grade / IT engineer'
       return [ ja, en ][this.languageId]
     },
