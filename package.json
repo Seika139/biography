@@ -16,7 +16,7 @@
     "express": "^4.17.1",
     "npm-check-updates": "^17.1.18",
     "vue": "^2.6.11",
-    "vuetify": "^2.3.7"
+    "vuetify": "^2.6.13"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.2",
