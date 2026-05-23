@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "express": "^4.22.1",
+    "express": "^4.22.2",
     "npm-check-updates": "^17.1.18",
     "vue": "^2.6.11",
     "vuetify": "^3.11.6"
